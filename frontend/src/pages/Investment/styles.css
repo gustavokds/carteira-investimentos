@@ -1,0 +1,108 @@
+.investment-container{
+    width: 80%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+    justify-content: center;
+}
+
+.investment-container header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.investment-container header span {
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.investment-container header button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #C0C0C0;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+    
+}
+
+.investment-container header button:hover {
+    border-color: #999;
+}
+
+.investment-container h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.investment-container form {
+    text-align: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.investment-container form select {
+    height: 20px;
+    width: 130px;
+    border: 1px solid #dcdce6;
+    margin-left: 10px;
+    border-radius: 5px;
+    font: 25px;
+}
+.investment-container form input {
+    height: 20px;
+    width: 130px;
+    border-radius: 5px;
+    padding: 0px;
+    margin-left: 10px;
+    font: 25px;
+}
+
+.investment-container form button {
+    margin-left: 10px;
+    height: 25px;
+    align-items: center;
+    border-radius: 8ch;
+    border-color: #999;
+}
+
+.investment-container form button:hover {
+    opacity: 0.8;
+}
+
+.investment-container .income {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.investment-container .income .fixed {
+    width: 60%;
+    max-width: 700px;
+}
+
+.investment-container .income .variable {
+    width: 40%;
+    max-width: 500px;
+}
+
+.investment-container .income .percent{
+    width: 40%;
+    text-align: justify;
+    float: left;
+}
+
+.investment-container .income li{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+.investment-container .chart {
+    width: 30%;
+    max-width: 200px;
+}
