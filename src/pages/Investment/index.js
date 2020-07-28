@@ -30,14 +30,8 @@ export default function Investiment() {
         }).then((response) => {
             carteira = (Number(response.data.fixed) + Number(response.data.variable));
             console.log(carteira);
-            if (response.data.fixed == null) {
-                setPercentFixed(0);
-            } else if (response.data.variable == null) {
-                setPercentVar(0);
-            } else {
-                setPercentVar(parseFloat((response.data.variable * 100) / carteira).toFixed(2));
-                setPercentFixed(parseFloat((response.data.fixed * 100) / carteira).toFixed(2));
-            }
+            setPercentVar(parseFloat((response.data.variable * 100) / carteira).toFixed(2));
+            setPercentFixed(parseFloat((response.data.fixed * 100) / carteira).toFixed(2));
         });
         api.get('/fixed', {
             headers: {
